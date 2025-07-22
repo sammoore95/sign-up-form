@@ -1,0 +1,53 @@
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body{
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    align-items: center;
+    background-color: darkgray;
+}
+
+@font-face {
+    font-family: odin-font;
+    src: url(fonts/Norse-Bold.otf);
+}
+
+#left-pane {
+    display: flex;
+    flex: 1;
+    background-image: url('images/leaves.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#right-pane {
+    display: flex;
+    flex: 2;
+}
+
+#logo-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    max-height: 12%;
+    width: auto;
+    position: relative;
+    top: 30%;
+    background-color: rgb(0, 0, 0, .4);
+}
+
+#logo-container h1 {
+    font-family: odin-font;
+    color: white;
+}

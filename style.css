@@ -16,6 +16,11 @@ body{
     /*background-color: darkgray;*/
 }
 
+html, body {
+    height: 100vh;
+    margin: 0;
+}
+
 @font-face {
     font-family: odin-font;
     src: url(fonts/Norse-Bold.otf);
@@ -33,6 +38,8 @@ body{
 #right-pane {
     display: flex;
     flex: 2;
+    flex-direction: column;
+    height: 100vh;
 }
 
 #logo-container {
@@ -44,7 +51,7 @@ body{
     width: auto;
     position: relative;
     top: 30%;
-    background-color: rgb(0, 0, 0, .4);
+    background-color: rgb(0, 0, 0, 0.4);
 }
 
 #logo-container h1 {
@@ -55,4 +62,27 @@ body{
 #right-pane-top {
     display: flex;
     flex: 1;
+    background-color: lightgrey;
+}
+
+#right-pane-top-text {
+    padding-top: 10vh;
+    padding-left: 5vw;
+    padding-right: 15vw;
+}
+
+#right-pane-top-text p {
+    font-weight: bold;
+}
+
+#sign-up-form {
+    display: flex;
+    flex: 1;
+    background-color: white;
+}
+
+#right-pane-bottom {
+    display: flex;
+    flex: 1;
+    background-color: lightgray;
 }

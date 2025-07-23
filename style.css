@@ -13,7 +13,7 @@ body{
     flex: auto;
     flex-direction: row;
     align-items: center;
-    background-color: darkgray;
+    /*background-color: darkgray;*/
 }
 
 @font-face {
@@ -50,4 +50,9 @@ body{
 #logo-container h1 {
     font-family: odin-font;
     color: white;
+}
+
+#right-pane-top {
+    display: flex;
+    flex: 1;
 }

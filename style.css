@@ -89,20 +89,34 @@ html, body {
 #sign-up-body {
     display: flex;
     flex-direction: column;
+    margin-bottom: 15px;
 }
 
 #sign-up-body > div {
-    padding-left: 5vw;
-}
-
-#sign-up-row-1 {
     display: flex;
     flex-direction: row;
+    margin-left: 5vw;
+    margin-bottom: 2vh;
 }
 
-#sign-up-row-1 > div {
+#sign-up-body > div > div {
     display: flex;
     flex-direction: column;
+    margin-right: 50px;
+}
+
+#first-name:focus,
+#last-name:focus,
+#user-email:focus,
+#phone-number:focus {
+    border: 2px solid lightblue;
+    outline: none;
+}
+
+#user-password:focus,
+#user-confirm-password:focus{
+    border: 2px solid red;
+    outline: none;
 }
 
 #right-pane-bottom {

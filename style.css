@@ -63,6 +63,12 @@ html, body {
     display: flex;
     flex: 1;
     background-color: lightgrey;
+    height: 33vh;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 #right-pane-top-text {
@@ -77,9 +83,10 @@ html, body {
 
 #sign-up-form {
     display: flex;
-    flex: 1;
     flex-direction: column;
+    flex-grow: 1;
     background-color: white;
+    height: 66vh;
 }
 
 #sign-up-form h2 {
@@ -88,6 +95,7 @@ html, body {
 
 #sign-up-body {
     display: flex;
+    flex: 1;
     flex-direction: column;
     margin-bottom: 15px;
 }
@@ -105,6 +113,19 @@ html, body {
     margin-right: 50px;
 }
 
+
+#submit-section {
+    display: flex;
+    margin-top: auto;
+    flex-direction: column;
+    align-content: flex-start;
+    padding-left: 5vw;
+    align-items: flex-start;
+    background-color: lightgray;
+    height: 33vh;
+    padding-top: 33px;
+}
+
 #first-name:focus,
 #last-name:focus,
 #user-email:focus,
@@ -113,14 +134,20 @@ html, body {
     outline: none;
 }
 
+#submit-button {
+    background-color: #596D48;
+    height: 45px;
+    width: 200px;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold ;
+    font-size: 15px;
+}
+
 #user-password:focus,
 #user-confirm-password:focus{
     border: 2px solid red;
     outline: none;
 }
 
-#right-pane-bottom {
-    display: flex;
-    flex: 1;
-    background-color: lightgray;
-}
+
